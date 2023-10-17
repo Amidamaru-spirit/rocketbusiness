@@ -1,0 +1,24 @@
+<script src="js/app.min.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper('.swiper', {
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    centeredSlides: true,
+    centeredSlidesBoundes: true,
+
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'fraction',
+      currentClass: '.prices-swiper__pagination-active',
+      totalClass: '.prices-swiper__pagination-inactive',
+    },
+    navigation: {
+      nextEl: '.prices-swiper__arrow-right',
+      prevEl: '.prices-swiper__arrow-left',
+    },
+  });
+</script>

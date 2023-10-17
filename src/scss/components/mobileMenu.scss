@@ -1,0 +1,60 @@
+.mobile-menu.menu-open {
+  background: rgba(69, 146, 127, 0.9);
+  backdrop-filter: blur(2px);
+  height: 100vh;
+  position: absolute;
+  top: 65px;
+  left: 0;
+  width: 375px;
+  max-width: $maxWidth + px;
+  min-width: $minWidth + px;
+  z-index: 100;
+  transition: left 0.5s ease-in-out;
+}
+
+.mobile-menu {
+  padding-top: 48px;
+  padding-left: 19px;
+  position: absolute;
+  left: -1000px;
+  z-index: 100;
+  &__container {
+    padding: 0;
+    margin: 0;
+  }
+  &__nav {
+    &-btn {
+      width: 196px;
+      height: 43px;
+      border-radius: 50px;
+      background: #f6f6f6;
+      color: #1fa181;
+      font-family: PTSansCaption, sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 21px; /* 150% */
+
+      &:hover {
+        background: #0dbc91;
+        color: #fff;
+      }
+    }
+  }
+
+  &__list {
+    margin-bottom: 39px;
+    &-item {
+      margin-bottom: 10px;
+    }
+
+    &-link {
+      color: #fff;
+      font-family: PTSansCaption, sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 150% */
+    }
+  }
+}

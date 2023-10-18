@@ -16,7 +16,7 @@ import BurgerMenu from './modules/BurgerMenu';
 // import Tabs from './modules/Tabs';
 // import Accordion from './modules/Accordion.js';
 
-BaseHelpers.checkWebpSupport();
+// BaseHelpers.checkWebpSupport();
 
 BaseHelpers.addTouchClass();
 

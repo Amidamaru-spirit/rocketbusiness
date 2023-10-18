@@ -1,10 +1,37 @@
 <div class="popup" data-popup="popup-1" data-close-overlay>
-    <div class="popup__wrapper" data-close-overlay>
-        <div class="popup__content">
-            <button class="popup__close button-close" type="button">x</button>
-            <div class="popup__body">
-                <h2>Базовый пример модального окна</h2>
-            </div>
-        </div>
+  <div class="popup__wrapper" data-close-overlay>
+    <div class="popup__content">
+      <button class="popup__close button-close" type="button">x</button>
+      <div class="popup__body">
+        <h2>Оставьте свои контактные данные и мы свяжемся с вами</h2>
+        <form class="popup__form" action="static/send.php" method="post">
+          <input
+            class="popup__form-input"
+            type="text"
+            name="name"
+            placeholder="Укажите Ваше Имя"
+          />
+          <input
+            class="popup__form-input"
+            type="text"
+            name="second_name"
+            placeholder="Укажите Ваше Отчество"
+          />
+          <input
+            class="popup__form-input"
+            type="text"
+            name="surname"
+            placeholder="Укажите Вашу Фамилию"
+          />
+          <input
+            class="popup__form-input"
+            type="text"
+            name="email"
+            placeholder="Укажите e-mail"
+          />
+          <input class="popup__form-input" type="submit" value="Отправить" />
+        </form>
+      </div>
     </div>
+  </div>
 </div>
